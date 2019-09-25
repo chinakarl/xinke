@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    include: datasource
+  application:
+    name: haixiangtest
+
+mybatis:
+   mapperLocations: classpath:/mapper/*.xml
