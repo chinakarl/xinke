@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<!-- 控制台日志 -->
+	<appender name="Console" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.out" />
+		<param name="Encoding" value="UTF-8" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%t] %d{yyyy-MM-dd HH\:mm\:ssS} %-5p %l- %m%n" />
+			<!-- %d{HH:mm:ss}[%C(%L)-%p] %m%n -->
+		</layout>
+	</appender>
+
+	<!-- 文件日志，（包含日志产生的时间，执行绪，类别等等信息） -->
+	<appender name="TTCC" class="org.apache.log4j.FileAppender">
+		<param name="File" value="${webName.root}/WEB-INF/logs/log_TTCCLayout.log" />
+		<param name="append" value="true" />
+		<param name="Encoding" value="UTF-8" />
+		<layout class="org.apache.log4j.TTCCLayout"></layout>
+	</appender>
+
+	<!-- HTML日志，以html表格的形式布局 -->
+	<appender name="HTML" class="org.apache.log4j.FileAppender">
+		<param name="File" value="${webName.root}/WEB-INF/logs/log_HTMLLayout.html" />
+		<param name="append" value="true" />
+		<param name="Encoding" value="UTF-8" />
+		<layout class="org.apache.log4j.HTMLLayout"></layout>
+	</appender>
+
+	<!-- 文件日志，（包含日志讯息的级别和讯息字符串） -->
+	<appender name="Simple" class="org.apache.log4j.FileAppender">
+		<param name="File" value="${webName.root}/WEB-INF/logs/log_SimpleLayout.log" />
+		<param name="append" value="true" />
+		<param name="Encoding" value="UTF-8" />
+		<layout class="org.apache.log4j.SimpleLayout"></layout>
+	</appender>
+
+	<!-- 文件日志 -->
+	<appender name="Pattern1" class="org.apache.log4j.FileAppender">
+		<param name="File" value="${webName.root}/WEB-INF/logs/log_PatternLayout.log" />
+		<param name="append" value="true" />
+		<param name="Encoding" value="UTF-8" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%r [%t] %p - %c -%l -%m%n" />
+		</layout>
+	</appender>
+
+	<!-- 文件日志 -->
+	<appender name="Pattern2" class="org.apache.log4j.FileAppender">
+		<param name="File"
+			value="${webName.root}/WEB-INF/logs/log_PatternLayout2.log" />
+		<param name="append" value="true" />
+		<param name="Encoding" value="UTF-8" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d{yyyy-MM-dd HH\:mm\:ss,SSS} %p] [%l] %m%n" />
+		</layout>
+	</appender>
+
+	<!-- 文件日志，（轮换"日志文件",当日志文件达到指定大小时，该文件就被关闭并备份，然后创建一个新的日志文件）） -->
+	<appender name="Rolling" class="org.apache.log4j.RollingFileAppender">
+		<param name="File"
+			value="${webName.root}/WEB-INF/logs/log_PatternLayout3.log" />
+		<param name="append" value="true" />
+		<param name="Encoding" value="UTF-8" />
+		<param name="MaxFileSize" value="51200KB" />
+		<param name="MaxBackupIndex" value="3" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd hh:mm:ss}:%p %t %c - %m%n" />
+		</layout>
+	</appender>
+
+	<!-- （打印到数据库） -->
+	<appender name="JDBC" class="com.lingran.base.log.jdbc.MyJDBCAppender">
+		<param name="BufferSize" value="40" />
+		<param name="Encoding" value="UTF-8" />
+		<param name="Driver" value="oracle.jdbc.OracleDriver" />
+		<param name="URL" value="jdbc:oracle:thin:@localhost:1521:lingran" />
+		<param name="User" value="carevaluation" />
+		<param name="Password" value="car123" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="INSERT INTO T_LOG_LOG4J (CREATE_DATE, THREAD, PRIORITY, CATEGORY, MESSAGE) values(to_date('%d{yyyy-MM-dd HH:mm:ss}', 'yyyy-mm-dd hh24:mi:ss'), '%t', '%p', '%l', ?)" />
+		</layout>
+	</appender>
+
+
+	<!-- 文件日志，（每天产生一个日志文件） -->
+	<appender name="DailyRolling" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="${webName.root}/WEB-INF/logs/log.log" />
+		<param name="DatePattern" value="'_'yyyyMMdd'.log'" />
+		<param name="Threshold" value="INFO" />
+		<param name="append" value="true" />
+		<param name="Encoding" value="UTF-8" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%-4r [%t] %-5p %d{yyyy-MM-dd HH\:mm\:ssS} %x %l- %m%n" />
+		</layout>
+	</appender>
+
+	<!-- 发送邮件 -->
+	<appender name="MAIL" class="org.apache.log4j.net.SMTPAppender">
+		<param name="threshold" value="ERROR" />
+		<param name="BufferSize" value="5" />
+		<param name="SMTPHost" value="smtp.sina.com.cn" />
+		<param name="SMTPUsername" value="yulianglin" />
+		<param name="SMTPPassword" value="123456" />
+		<param name="SMTPDebug" value="false" />
+		<param name="Encoding" value="UTF-8" />
+		<param name="From" value="yulianglin@sina.com" />
+		<param name="Subject" value="log4j_测试邮件" />
+		<param name="To" value="yulianglin@sina.com,linyuliang@foxmail.com" />
+		<layout class="org.apache.log4j.HTMLLayout"></layout>
+	</appender>
+
+
+	<!-- log4j_1.15版支持，但1.15版存在bug 邮件提醒 <appender name="LOG.REMIND_SMTP" class="org.apache.log4j.net.SMTPAppender"> 
+		<param name="SMTPHost" value="smtp.sina.com.cn" /> <param name="SMTPUsername" 
+		value="yulianglin" /> <param name="SMTPPassword" value="windboy" /> <param 
+		name="SMTPDebug" value="false" /> <param name="from" value="yulianglin@sina.com" 
+		/> <param name="to" value="yulianglin@sina.com" />多个邮件地址用逗号分割 <param name="subject" 
+		value="来自心情世界（MOOD）的邮件提醒" /> <triggeringPolicy class="com.lingran.base.log.mail.MockTriggeringEventEvaluator$RemindMockTriggeringEventEvaluator" 
+		/> 邮件发送策略，自已定义 <layout class="com.lingran.base.log.layout.CustHTMLLayout"> 
+		</layout> 级别过滤 <filter class="org.apache.log4j.varia.LevelRangeFilter"> <param 
+		name="LevelMin" value="REMIND#com.lingran.base.log.mail.TDTLevel" />在这里添加我们自定义的级别,注意#号不能少 
+		<param name="LevelMax" value="REMIND#com.lingran.base.log.mail.TDTLevel" 
+		/> </filter> </appender> 程序出错邮件提醒,发送至程序开发人员 <appender name="LOG.ERROR_SMTP" 
+		class="org.apache.log4j.net.SMTPAppender"> <param name="SMTPHost" value="smtp.sina.com.cn" 
+		/> <param name="SMTPUsername" value="yulianglin" /> <param name="SMTPPassword" 
+		value="windboy" /> <param name="SMTPDebug" value="false" /> <param name="from" 
+		value="yulianglin@sina.com" /> <param name="to" value="yulianglin@sina.com,linyuliang@foxmail.com" 
+		/> <param name="subject" value="心情世界_MOOD_程序错误信息" /> <triggeringPolicy class="com.lingran.base.log.mail.MockTriggeringEventEvaluator$ErrorMockTriggeringEventEvaluator" 
+		/> <layout class="com.lingran.base.log.layout.CustPatternLayout"> <param 
+		name="ConversionPattern" value="[%t] %d{yyyy-MM-dd HH\:mm\:ssS} %-5p %l- 
+		%m%n" /> </layout> 级别过滤 <filter class="org.apache.log4j.varia.LevelRangeFilter"> 
+		<param name="LevelMin" value="ERROR" /> <param name="LevelMax" value="FATAL" 
+		/> </filter> </appender> -->
+
+	<!-- XML -->
+	<appender name="XML" class="org.apache.log4j.RollingFileAppender">
+		<param name="threshold" value="error" />
+		<param name="file" value="/log.xml" />
+		<param name="maxFileSize" value="1024KB" />
+		<param name="maxBackupIndex" value="5" />
+		<param name="append" value="true" />
+		<param name="Encoding" value="UTF-8" />
+		<layout class="org.apache.log4j.xml.XMLLayout" />
+	</appender>
+
+	<!-- Socket -->
+	<appender name="Socket" class="org.apache.log4j.net.SocketAppender">
+		<param name="threshold" value="fatal" />
+		<param name="remoteHost" value="localhost" />
+		<param name="port" value="4445" />
+		<param name="locationInfo" value="true" />
+	</appender>
+
+	<logger name="java.sql.PreparedStatement">
+		<level value="DEBUG" />
+		<appender-ref ref="Console" />
+	</logger>
+
+	<logger name="java.sql.Connection">
+		<level value="DEBUG" />
+		<appender-ref ref="Console" />
+	</logger>
+
+	<logger name="java.sql.ResultSet">
+		<level value="DEBUG" />
+		<appender-ref ref="Console" />
+	</logger>
+	
+	<logger name="org.mybatis">
+		<level value="DEBUG" />
+		<appender-ref ref="Console" />
+	</logger>
+	
+	<logger name="org.apache.ibatis">
+		<level value="DEBUG" />
+		<appender-ref ref="Console" />
+	</logger>
+
+	<logger name="org.springframework">
+		<level value="DEBUG" />
+		<appender-ref ref="Console" />
+	</logger>
+
+	<!-- <root> <level value="WARN" /> <appender-ref ref="Console" /> log4j_1.15版支持，但1.15版存在bug 
+		<appender-ref ref="LOG.REMIND_SMTP" /> <appender-ref ref="LOG.ERROR_SMTP" 
+		/> </root> -->
+</log4j:configuration>

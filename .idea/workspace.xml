@@ -1,0 +1,1238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5b756611-506e-4070-8916-0bdfe7e4f3d3" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/RunGeneCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/ant/AntProgressCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/ant/GeneratorAntTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/CommentGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/DAOMethodNameCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/FullyQualifiedTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/GeneratedFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/GeneratedJavaFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/GeneratedXmlFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/IntrospectedColumn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/IntrospectedTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/JavaTypeResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/MyBatisGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/Plugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/PluginAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/ProgressCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/ShellCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/ShellRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/VerboseProgressCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/dom/OutputUtilities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/dom/java/CompilationUnit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/dom/java/Field.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/dom/java/FullyQualifiedJavaType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/dom/java/InitializationBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/dom/java/InnerClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/dom/java/InnerEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/dom/java/Interface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/dom/java/JavaElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/dom/java/JavaVisibility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/dom/java/Method.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/dom/java/Parameter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/dom/java/PrimitiveTypeWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/dom/java/TopLevelClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/dom/java/TopLevelEnumeration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/dom/xml/Attribute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/dom/xml/Document.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/dom/xml/Element.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/dom/xml/TextElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/dom/xml/XmlElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/api/package.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/base/BaseBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/base/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/base/SearchInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/AbstractGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/AbstractJavaClientGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/AbstractJavaGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/AbstractXmlGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/RootClassInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/XmlConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/Ibatis2FormattingUtilities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/IntrospectedTableIbatis2Java2Impl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/IntrospectedTableIbatis2Java5Impl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/dao/DAOGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/dao/elements/AbstractDAOElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/dao/elements/CountByExampleMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/dao/elements/DeleteByExampleMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/dao/elements/DeleteByPrimaryKeyMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/dao/elements/InsertMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/dao/elements/InsertSelectiveMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/dao/elements/SelectByExampleWithBLOBsMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/dao/elements/SelectByExampleWithoutBLOBsMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/dao/elements/SelectByPrimaryKeyMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/dao/elements/UpdateByExampleParmsInnerclassGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/dao/elements/UpdateByExampleSelectiveMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/dao/elements/UpdateByExampleWithBLOBsMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/dao/elements/UpdateByExampleWithoutBLOBsMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/dao/elements/UpdateByPrimaryKeySelectiveMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/dao/elements/UpdateByPrimaryKeyWithBLOBsMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/dao/elements/UpdateByPrimaryKeyWithoutBLOBsMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/dao/templates/AbstractDAOTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/dao/templates/GenericCIDAOTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/dao/templates/GenericSIDAOTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/dao/templates/IbatisDAOTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/dao/templates/SpringDAOTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/model/BaseRecordGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/model/ExampleGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/model/PrimaryKeyGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/model/RecordWithBLOBsGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/sqlmap/SqlMapGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/sqlmap/elements/AbstractXmlElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/sqlmap/elements/BaseColumnListElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/sqlmap/elements/BlobColumnListElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/sqlmap/elements/CountByExampleElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/sqlmap/elements/DeleteByExampleElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/sqlmap/elements/DeleteByPrimaryKeyElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/sqlmap/elements/ExampleWhereClauseElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/sqlmap/elements/InsertElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/sqlmap/elements/InsertSelectiveElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/sqlmap/elements/ResultMapWithBLOBsElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/sqlmap/elements/ResultMapWithoutBLOBsElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/sqlmap/elements/SelectByExampleWithBLOBsElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/sqlmap/elements/SelectByExampleWithoutBLOBsElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/sqlmap/elements/SelectByPrimaryKeyElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/sqlmap/elements/UpdateByExampleSelectiveElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/sqlmap/elements/UpdateByExampleWithBLOBsElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/sqlmap/elements/UpdateByExampleWithoutBLOBsElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/sqlmap/elements/UpdateByPrimaryKeySelectiveElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/sqlmap/elements/UpdateByPrimaryKeyWithBLOBsElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/ibatis2/sqlmap/elements/UpdateByPrimaryKeyWithoutBLOBsElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/IntrospectedTableMyBatis3Impl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/MyBatis3FormattingUtilities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/AnnotatedClientGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/JavaMapperGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/MixedClientGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/SqlProviderGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/AbstractJavaMapperMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/CountByExampleMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/DeleteByExampleMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/DeleteByPrimaryKeyMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/InsertMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/InsertSelectiveMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/SelectByExampleWithBLOBsMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/SelectByExampleWithoutBLOBsMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/SelectByPrimaryKeyMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/UpdateByExampleSelectiveMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/UpdateByExampleWithBLOBsMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/UpdateByExampleWithoutBLOBsMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/UpdateByPrimaryKeySelectiveMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/UpdateByPrimaryKeyWithBLOBsMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/UpdateByPrimaryKeyWithoutBLOBsMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/annotated/AnnotatedCountByExampleMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/annotated/AnnotatedDeleteByExampleMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/annotated/AnnotatedDeleteByPrimaryKeyMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/annotated/AnnotatedInsertMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/annotated/AnnotatedInsertSelectiveMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/annotated/AnnotatedSelectByExampleWithBLOBsMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/annotated/AnnotatedSelectByExampleWithoutBLOBsMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/annotated/AnnotatedSelectByPrimaryKeyMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/annotated/AnnotatedUpdateByExampleSelectiveMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/annotated/AnnotatedUpdateByExampleWithBLOBsMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/annotated/AnnotatedUpdateByExampleWithoutBLOBsMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/annotated/AnnotatedUpdateByPrimaryKeySelectiveMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/annotated/AnnotatedUpdateByPrimaryKeyWithBLOBsMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/annotated/AnnotatedUpdateByPrimaryKeyWithoutBLOBsMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/sqlprovider/AbstractJavaProviderMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/sqlprovider/ProviderApplyWhereMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/sqlprovider/ProviderCountByExampleMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/sqlprovider/ProviderDeleteByExampleMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/sqlprovider/ProviderInsertSelectiveMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/sqlprovider/ProviderSelectByExampleWithBLOBsMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/sqlprovider/ProviderSelectByExampleWithoutBLOBsMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/sqlprovider/ProviderUpdateByExampleSelectiveMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/sqlprovider/ProviderUpdateByExampleWithBLOBsMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/sqlprovider/ProviderUpdateByExampleWithoutBLOBsMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/elements/sqlprovider/ProviderUpdateByPrimaryKeySelectiveMethodGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/model/BaseRecordGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/model/ExampleGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/model/PrimaryKeyGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/model/RecordWithBLOBsGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/xmlmapper/MixedMapperGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/xmlmapper/XMLMapperGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/xmlmapper/elements/AbstractXmlElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/xmlmapper/elements/BaseColumnListElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/xmlmapper/elements/BlobColumnListElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/xmlmapper/elements/CountByExampleElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/xmlmapper/elements/DeleteByExampleElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/xmlmapper/elements/DeleteByPrimaryKeyElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/xmlmapper/elements/ExampleWhereClauseElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/xmlmapper/elements/InsertElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/xmlmapper/elements/InsertSelectiveElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/xmlmapper/elements/ResultMapWithBLOBsElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/xmlmapper/elements/ResultMapWithoutBLOBsElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/xmlmapper/elements/SelectByExampleWithBLOBsElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/xmlmapper/elements/SelectByExampleWithoutBLOBsElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/xmlmapper/elements/SelectByPrimaryKeyElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/xmlmapper/elements/UpdateByExampleSelectiveElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/xmlmapper/elements/UpdateByExampleWithBLOBsElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/xmlmapper/elements/UpdateByExampleWithoutBLOBsElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/xmlmapper/elements/UpdateByPrimaryKeySelectiveElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/xmlmapper/elements/UpdateByPrimaryKeyWithBLOBsElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/codegen/mybatis3/xmlmapper/elements/UpdateByPrimaryKeyWithoutBLOBsElementGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/config/ColumnOverride.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/config/ColumnRenamingRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/config/CommentGeneratorConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/config/Configuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/config/Context.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/config/GeneratedKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/config/IgnoredColumn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/config/JDBCConnectionConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/config/JavaClientGeneratorConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/config/JavaModelGeneratorConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/config/JavaTypeResolverConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/config/MergeConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/config/ModelType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/config/PluginConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/config/PropertyHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/config/PropertyRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/config/SqlMapGeneratorConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/config/TableConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/config/TypedPropertyHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/config/xml/ConfigurationParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/config/xml/IbatorConfigurationParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/config/xml/MyBatisGeneratorConfigurationParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/config/xml/ParserEntityResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/config/xml/ParserErrorHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/config/xml/ibator-config_1_0.dtd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/config/xml/mybatis-generator-config_1_0.dtd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/criteria/Criteria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/exception/InvalidConfigurationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/exception/ShellException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/exception/XMLParserException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/DefaultCommentGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/DefaultDAOMethodNameCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/DefaultShellCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/DomWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/ExtendedDAOMethodNameCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/NullProgressCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/ObjectFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/PluginAggregator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/XmlFileMergerJaxp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/db/ActualTableName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/db/ConnectionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/db/DatabaseDialects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/db/DatabaseIntrospector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/db/SqlReservedWords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/rules/BaseRules.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/rules/ConditionalModelRules.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/rules/FlatModelRules.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/rules/HierarchicalModelRules.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/rules/Rules.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/rules/RulesDelegate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/types/JavaTypeResolverDefaultImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/types/JdbcTypeNameTranslator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/util/ClassloaderUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/util/EqualsUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/util/HashCodeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/util/JavaBeansUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/util/StringUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/util/messages/Messages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/internal/util/messages/messages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/logging/AbstractLogFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/logging/JdkLoggingImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/logging/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/logging/Log4jImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/logging/LogFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/page/Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/page/PageCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/page/PageUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/plugins/AnnotationPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/plugins/CaseInsensitiveLikePlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/plugins/CommentGeneratorPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/plugins/EqualsHashCodePlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/plugins/EqualsHashCodeToStringPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/plugins/IbatisCriteriaPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/plugins/IbatisServicePlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/plugins/MapperConfigPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/plugins/MybatisCriteriaPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/plugins/MybatisCriteriaPlugin2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/plugins/MybatisServicePlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/plugins/MysqlPaginationPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/plugins/OraclePaginationPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/plugins/RenameExampleClassPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/plugins/SerializablePlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/plugins/SqlMapConfigPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/plugins/TableConstantPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/resources/config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinke-common/common-code/src/main/resources/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xinke-common/common-code/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/com/xinke/RunGeneCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/resources/config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/resources/log4j.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xinke-common/common-code/src/main/java/resources/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xinke-common/common-code/src/test/java/com/xinke/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xinke-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xinke-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xinke-customer/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xinke-customer/src/main/java/com/xinke/order/DemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xinke-customer/src/main/resources/application-datasource.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xinke-customer/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xinke-customer/src/test/java/com/xinke/order/DemoApplicationTests.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/xinke-common/target/" />
+    <ignored path="$PROJECT_DIR$/xinke-common/xinke-code/target/" />
+    <ignored path="$PROJECT_DIR$/back/target/" />
+    <ignored path="$PROJECT_DIR$/xinke-common/common-code/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/back/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/back/src/main/java/back/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xinke-common/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="786">
+              <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xinke-common/common-code/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xinke-common/common-code/src/main/resources/log4j.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="70" column="15" selection-start-line="70" selection-start-column="15" selection-end-line="70" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseEntity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/base/BaseEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RunGeneCode.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/xinke-common/common-code/src/main/java/RunGeneCode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xinke-common/common-code/src/main/resources/config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="22" column="77" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="project.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xinke-common/common-code/src/main/resources/project.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../../../soundcode/spring-framework" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/xinke-common/RunGeneCode.java" />
+        <option value="$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/RunGeneCode.java" />
+        <option value="$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/page/PageUtils.java" />
+        <option value="$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/base/SearchInfo.java" />
+        <option value="$PROJECT_DIR$/xinke-common/xinke-code/src/main/resource/project.properties" />
+        <option value="$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/page/Page.java" />
+        <option value="$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/page/PageCondition.java" />
+        <option value="$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/base/BaseBean.java" />
+        <option value="$PROJECT_DIR$/xinke-common/xinke-code/src/test/java/org/mybatis/generator/AppTest.java" />
+        <option value="$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/RunGeneCode.java" />
+        <option value="$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/plugins/OraclePaginationPlugin.java" />
+        <option value="$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/codegen/mybatis3/IntrospectedTableMyBatis3Impl.java" />
+        <option value="$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/criteria/Criteria.java" />
+        <option value="$PROJECT_DIR$/xinke-common/xinke-code/src/main/resources/project.properties" />
+        <option value="$PROJECT_DIR$/back/pom.xml" />
+        <option value="$PROJECT_DIR$/xinke-common/xinke-code/pom.xml" />
+        <option value="$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/ant/GeneratorAntTask.java" />
+        <option value="$PROJECT_DIR$/xinke-common/pom.xml" />
+        <option value="$PROJECT_DIR$/xinke-common/common-code/pom.xml" />
+        <option value="$PROJECT_DIR$/xinke-common/common-code/src/test/java/common-code/AppTest.java" />
+        <option value="$PROJECT_DIR$/xinke-common/common-code/src/main/resources/project.properties" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="E:\maven\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="common-code" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="common-code" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-6" />
+    <option name="y" value="-6" />
+    <option name="width" value="1617" />
+    <option name="height" value="888" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="xinke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xinke" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xinke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xinke" type="462c0819:PsiDirectoryNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xinke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xinke" type="462c0819:PsiDirectoryNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xinke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xinke" type="462c0819:PsiDirectoryNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xinke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xinke" type="462c0819:PsiDirectoryNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xinke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xinke" type="462c0819:PsiDirectoryNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xinke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xinke" type="462c0819:PsiDirectoryNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xinke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xinke" type="462c0819:PsiDirectoryNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xinke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xinke" type="462c0819:PsiDirectoryNode" />
+              <item name="xinke-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xinke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xinke" type="462c0819:PsiDirectoryNode" />
+              <item name="xinke-common" type="462c0819:PsiDirectoryNode" />
+              <item name="common-code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xinke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xinke" type="462c0819:PsiDirectoryNode" />
+              <item name="xinke-common" type="462c0819:PsiDirectoryNode" />
+              <item name="common-code" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xinke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xinke" type="462c0819:PsiDirectoryNode" />
+              <item name="xinke-common" type="462c0819:PsiDirectoryNode" />
+              <item name="common-code" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xinke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xinke" type="462c0819:PsiDirectoryNode" />
+              <item name="xinke-common" type="462c0819:PsiDirectoryNode" />
+              <item name="common-code" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xinke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xinke" type="462c0819:PsiDirectoryNode" />
+              <item name="xinke-common" type="462c0819:PsiDirectoryNode" />
+              <item name="common-code" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xinke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xinke" type="462c0819:PsiDirectoryNode" />
+              <item name="xinke-common" type="462c0819:PsiDirectoryNode" />
+              <item name="common-code" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="generator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xinke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xinke" type="462c0819:PsiDirectoryNode" />
+              <item name="xinke-common" type="462c0819:PsiDirectoryNode" />
+              <item name="common-code" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xinke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xinke" type="462c0819:PsiDirectoryNode" />
+              <item name="xinke-common" type="462c0819:PsiDirectoryNode" />
+              <item name="common-code" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2954023" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.mybatis.generator.criteria" />
+      <recent name="org.mybatis.generator.base" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\JAVA\project\me\xinke\xinke-common\common-code\src\main\resources" />
+      <recent name="H:\JAVA\project\me\xinke\xinke-common\common-code\src" />
+      <recent name="H:\JAVA\project\me\xinke\xinke-common\xinke-code\src\main\java\org\mybatis\generator" />
+      <recent name="H:\JAVA\project\me\xinke\xinke-common\xinke-code\src\main\java\org\mybatis\generator\plugins" />
+      <recent name="H:\JAVA\project\me\xinke\xinke-common\xinke-code\src\main\java\org\mybatis\generator\page" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="RunGeneCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RunGeneCode" />
+      <module name="common-code" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RunGeneCode" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5b756611-506e-4070-8916-0bdfe7e4f3d3" name="Default" comment="" />
+      <created>1569467626705</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569467626705</updated>
+      <workItem from="1569467630393" duration="48009000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="48009000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" visible="true" weight="0.22654584" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info id="Capture Tool" />
+      <window_info id="Designer" />
+      <window_info anchor="right" id="Database" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39978212" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" weight="0.32570806" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info id="Image Layers" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35511982" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20735608" />
+      <window_info anchor="right" id="Bean Validation" />
+      <window_info id="Web" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/RunGeneCode.java</url>
+          <line>23</line>
+          <properties />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/RunGeneCode.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/plugins/OraclePaginationPlugin.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/plugins/AnnotationPlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/repository/org/mybatis/generator/mybatis-generator-core/1.3.6/mybatis-generator-core-1.3.6.jar!/org/mybatis/generator/api/dom/java/InnerClass.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
+          <folding>
+            <element signature="e#1430#1431#0" expanded="true" />
+            <element signature="e#1468#1469#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/plugins/SqlMapConfigPlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/plugins/SerializablePlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="92" column="25" lean-forward="true" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/codegen/mybatis3/javamapper/MixedClientGenerator.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/internal/rules/ConditionalModelRules.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/codegen/ibatis2/sqlmap/elements/DeleteByPrimaryKeyElementGenerator.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/api/dom/xml/Attribute.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/internal/DomWriter.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/api/PluginAdapter.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/internal/db/SqlReservedWords.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/codegen/mybatis3/model/PrimaryKeyGenerator.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/codegen/mybatis3/xmlmapper/elements/UpdateByExampleSelectiveElementGenerator.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/codegen/mybatis3/IntrospectedTableMyBatis3Impl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/logging/Log4jImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#835#836#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/ant/GeneratorAntTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="74" column="42" selection-start-line="74" selection-start-column="38" selection-end-line="74" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/com/xinke/account/st.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/criteria/Criteria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" selection-start-column="8" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/resources/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-399">
+          <caret line="26" column="74" selection-start-line="26" selection-start-column="74" selection-end-line="26" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/com/xinke/account/entity/ter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/org/xml/sax/InputSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="160" selection-start-line="160" selection-end-line="160" />
+          <folding>
+            <element signature="e#4635#4636#0" expanded="true" />
+            <element signature="e#9612#9613#0" expanded="true" />
+            <element signature="e#9666#9667#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/config/xml/ConfigurationParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+          <folding>
+            <element signature="e#1506#1507#0" expanded="true" />
+            <element signature="e#1533#1534#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/jre/lib/rt.jar!/jdk/xml/internal/JdkXmlUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/jre/lib/rt.jar!/jdk/xml/internal/SecuritySupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#746#889#0" expanded="true" />
+            <element signature="e#888#889#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/api/MyBatisGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/config/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+          <folding>
+            <element signature="e#2052#2060#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/config/JDBCConnectionConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="120" selection-start-line="120" selection-end-line="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/config/JavaModelGeneratorConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/config/TypedPropertyHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#936#937#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/config/JavaClientGeneratorConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/config/Context.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="318" selection-start-line="318" selection-end-line="318" />
+          <folding>
+            <element signature="e#9601#9602#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/internal/util/StringUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#951#952#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/org/mybatis/generator/internal/ObjectFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="102" column="76" selection-start-line="102" selection-start-column="76" selection-end-line="102" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/resources/project.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/src/main/java/RunGeneCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/src/main/java/back/com/xinke/management/tst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/src/main/java/back/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/xinke-code/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/ant/GeneratorAntTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-494">
+          <caret line="144" column="28" selection-start-line="144" selection-start-column="28" selection-end-line="144" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/common-code/src/main/java/xinke-common/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/common-code/src/test/java/common-code/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/common-code/src/main/java/org/mybatis/generator/base/BaseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/common-code/src/main/resources/project.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/common-code/src/main/resources/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="22" column="77" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="786">
+          <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/common-code/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/common-code/src/main/resources/log4j.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="70" column="15" selection-start-line="70" selection-start-column="15" selection-end-line="70" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinke-common/common-code/src/main/java/RunGeneCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>xinke-code</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2954023" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: junit:junit:4.11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

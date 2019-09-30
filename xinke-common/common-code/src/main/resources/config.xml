@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!-- 配置文件路径 -->
+    <properties  resource="project.properties"/>
+
+    <!--数据库驱动包路径 -->
+    <!--<classPathEntry location="${driver.class.path}"/>-->
+
+    <context id="DB2Tables" targetRuntime="MyBatis3">
+        <property name="jdbcType" value="true" />
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"></plugin>
+        <plugin type="org.mybatis.generator.plugins.EqualsHashCodeToStringPlugin">
+            <property name="stringAndEqualsObject" value="${baseBean.package}" />
+        </plugin>
+        <!--<plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin"></plugin>-->
+        <plugin type="org.mybatis.generator.plugins.CommentGeneratorPlugin" />
+        <plugin type="org.mybatis.generator.plugins.CaseInsensitiveLikePlugin" />
+        <!-- <plugin type="org.mybatis.generator.plugins.MysqlPaginationPlugin" /> -->
+        <plugin type="org.mybatis.generator.plugins.MybatisCriteriaPlugin" />
+
+        <!--这个元素用来生成对应的表的常量定义-->
+        <plugin type="org.mybatis.generator.plugins.TableConstantPlugin">
+            <property name="targetPackage" value="${constants.package}" />
+            <property name="targetProject" value="${constants.target}" />
+        </plugin>
+
+        <!-- 想要mybaits代码生成器生成Example类换个名字，是通过插件实现的，即下面的这个插件配置参数很关键。 -->
+        <plugin type="org.mybatis.generator.plugins.RenameExampleClassPlugin">
+            <property name="searchString" value="Example$" />
+            <property name="replaceString" value="Criteria" />
+        </plugin>
+
+        <commentGenerator>
+            <!-- 这个元素用来去除指定生成的注释中是否包含生成的日期 false:表示保护 -->
+            <!-- 如果生成日期，会造成即使修改一个字段，整个实体类所有属性都会发生变化，不利于版本控制，所以设置为true -->
+            <property name="suppressDate" value="true" />
+            <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+            <property name="suppressAllComments" value="true" />
+        </commentGenerator>
+
+        <!--数据库链接URL，用户名、密码 -->
+        <jdbcConnection driverClass="${jdbc.driver}"
+                        connectionURL="${jdbc.url}"
+                        userId="${jdbc.username}"
+                        password="${jdbc.password}">
+            <property name="remarksReporting" value="true" />
+            <property name="useUnicode" value="true" />
+            <property name="characterEncoding" value="UTF-8" />
+            <!--<property name="tinyInt1isBit" value="false" />-->
+        </jdbcConnection>
+
+        <javaTypeResolver>
+            <!-- This property is used to specify whether MyBatis Generator should
+                force the use of java.math.BigDecimal for DECIMAL and NUMERIC fields, -->
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+        <!-- 生成模型的包名和位置 -->
+        <javaModelGenerator targetPackage="${beans.package}"
+                            targetProject="${beans.target}">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+
+        <!-- 生成映射文件的包名和位置 -->
+        <sqlMapGenerator targetPackage="mapper"
+                         targetProject="${mapper.target}">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+
+        <!-- 生成DAO的包名和位置 -->
+        <javaClientGenerator type="XMLMAPPER"
+                             targetPackage="${dao.package}"
+                             targetProject="${dao.target}">
+            <property name="criteria" value="${criteria.package}" />
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+        <!-- 要生成的表 tableName是数据库中的表名或视图名 domainObjectName是实体类名-->
+        <!--
+        <table tableName="user" domainObjectName="user"
+        enableCountByExample="false" enableUpdateByExample="false"
+        enableDeleteByExample="false" enableSelectByExample="false"
+        selectByExampleQueryId="false">
+        <generatedKey column="act_id" sqlStatement="mysql" identity="true"/>
+        </table>
+        -->
+        <table tableName="${tablename}" ></table>
+    </context>
+</generatorConfiguration>
