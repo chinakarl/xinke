@@ -7,9 +7,26 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="back" />
+        <module name="cloud" />
         <module name="common-account" />
         <module name="common-code" />
+        <module name="comsumer" />
+        <module name="monitor" />
+        <module name="producer" />
+        <module name="producertwo" />
+        <module name="xinke" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud" target="1.8" />
+      <module name="demo" target="1.8" />
+      <module name="eureka" target="1.8" />
+      <module name="ribbon" target="1.8" />
+      <module name="ribbon-consumer" target="1.8" />
+      <module name="test" target="1.8" />
+      <module name="xinke-management" target="1.8" />
+      <module name="xinke-web" target="1.8" />
+      <module name="xinkeaccount" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

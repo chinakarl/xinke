@@ -6,6 +6,8 @@
       <list>
         <option value="$PROJECT_DIR$/xinke-common/pom.xml" />
         <option value="$PROJECT_DIR$/back/pom.xml" />
+        <option value="$PROJECT_DIR$/xinke-cloud/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

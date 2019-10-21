@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/xinke.iml" filepath="$PROJECT_DIR$/xinke.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud/cloud.iml" filepath="$PROJECT_DIR$/cloud/cloud.iml" />
     </modules>
   </component>
 </project>
