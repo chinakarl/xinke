@@ -1,0 +1,6 @@
+H:\JAVA\project\me\xinke\xinke-cloud\comsumer\src\main\java\com\cloud\producer\ComsumerBootStartApplication.java
+H:\JAVA\project\me\xinke\xinke-cloud\comsumer\src\main\java\com\cloud\producer\controller\RibbonHelloController.java
+H:\JAVA\project\me\xinke\xinke-cloud\comsumer\src\main\java\com\cloud\producer\service\FeignHelloService.java
+H:\JAVA\project\me\xinke\xinke-cloud\comsumer\src\main\java\com\cloud\producer\service\FeignHelloHystrix.java
+H:\JAVA\project\me\xinke\xinke-cloud\comsumer\src\main\java\com\cloud\producer\controller\FeignHelloController.java
+H:\JAVA\project\me\xinke\xinke-cloud\comsumer\src\main\java\com\cloud\producer\controller\ServiceController.java

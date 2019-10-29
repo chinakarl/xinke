@@ -9,6 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>xinke-common</groupId>
     <artifactId>common-code</artifactId>
 
     <name>common-code</name>
