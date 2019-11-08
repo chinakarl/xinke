@@ -103,5 +103,5 @@ public interface SysMenuMapper {
     int updateByPrimaryKey(SysMenu record);
 
 
-    List<SysMenu> getMenusByUserId(Long id);
+    List<SysMenu> getMenusByUserId(Integer id);
 }

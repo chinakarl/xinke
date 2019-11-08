@@ -308,7 +308,7 @@
     where id = #{id,jdbcType=INTEGER}
   </update>
 
-  <select id="getMenusByUserId" parameterType="Long" resultMap="BaseResultMap">
+  <select id="getMenusByUserId" parameterType="Integer" resultMap="BaseResultMap">
         select m1.`id`,m1.`path`,m1.`component`,m1.`iconCls`,m1.`name`,m1.`requireAuth`,m2.`component` as component2,m2.`iconCls` as iconCls2,m2.`keepAlive` as keepAlive2,m2.`name` as name2,m2.`path` as path2,m2.`requireAuth` as requireAuth2 from sys_menu m1,sys_menu m2 where m1.`id`=m2.`parentId` and m1.`id`!=1 and m2.`id` in(select mr.`mid` from sys_user_role sur,sys_menu_role mr where sur.`roleid`=mr.`rid` and sur.`userid`=#{hrId}) and m2.`enabled`=true order by m1.`id`,m2.`id`
    </select>
 </mapper>

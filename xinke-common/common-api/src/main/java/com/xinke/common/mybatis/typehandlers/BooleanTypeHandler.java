@@ -1,6 +1,6 @@
 package com.xinke.common.mybatis.typehandlers;
 
-import com.ai.market.common.constants.Symbol;
+import com.xinke.common.constants.Symbol;
 import org.apache.ibatis.type.BaseTypeHandler;
 import org.apache.ibatis.type.JdbcType;
 

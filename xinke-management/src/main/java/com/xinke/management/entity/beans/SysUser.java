@@ -1,7 +1,7 @@
 package com.xinke.management.entity.beans;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import org.mybatis.generator.base.BaseBean;
+import com.xinke.common.base.BaseBean;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -9,16 +9,17 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Date;
 import java.util.List;
 
 /**
- * @ClassName: Hr
- * @Description: hr表对应的java bean类
+ * @ClassName: SysUser
+ * @Description: SysUser表对应的java bean类
  * @author: Interests
  */
-public class SysUser implements UserDetails {
+public class SysUser extends BaseBean implements UserDetails,Serializable {
 
-    private Long id;
+    private Integer id;
     private String name;
     private String phone;
     private String telephone;
@@ -29,6 +30,32 @@ public class SysUser implements UserDetails {
     private String remark;
     private List<SysRole> roles;
     private String userface;
+    /**
+     * @Fields sys_user.create_time :
+     */
+    private Date createTime;
+
+    /**
+     * @Fields sys_user.create_no :
+     */
+    private Integer createNo;
+
+    /**
+     * @Fields sys_user.update_time :
+     */
+    private Date updateTime;
+
+    /**
+     * @Fields sys_user.update_no :
+     */
+    private Integer updateNo;
+
+    /**
+     * @Fields sys_user.del_flag :
+     */
+    private Byte delFlag;
+
+
     @Override
     public boolean isEnabled() {
         return enabled;
@@ -83,11 +110,11 @@ public class SysUser implements UserDetails {
         this.roles = roles;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -142,5 +169,45 @@ public class SysUser implements UserDetails {
 
     public void setRemark(String remark) {
         this.remark = remark;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public Integer getCreateNo() {
+        return createNo;
+    }
+
+    public void setCreateNo(Integer createNo) {
+        this.createNo = createNo;
+    }
+
+    public Date getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
+    }
+
+    public Integer getUpdateNo() {
+        return updateNo;
+    }
+
+    public void setUpdateNo(Integer updateNo) {
+        this.updateNo = updateNo;
+    }
+
+    public Byte getDelFlag() {
+        return delFlag;
+    }
+
+    public void setDelFlag(Byte delFlag) {
+        this.delFlag = delFlag;
     }
 }

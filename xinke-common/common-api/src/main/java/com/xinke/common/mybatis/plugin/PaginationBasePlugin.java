@@ -1,12 +1,14 @@
 package com.xinke.common.mybatis.plugin;
 
-import com.ai.market.common.page.Page;
-import com.ai.market.common.page.PageCondition;
+import com.xinke.common.page.Page;
+import com.xinke.common.page.PageCondition;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.ibatis.executor.ErrorContext;
 import org.apache.ibatis.executor.Executor;
 import org.apache.ibatis.executor.ExecutorException;
+import org.apache.ibatis.mapping.*;
 import org.apache.ibatis.mapping.MappedStatement.Builder;
+import org.apache.ibatis.plugin.*;
 import org.apache.ibatis.reflection.MetaObject;
 import org.apache.ibatis.reflection.property.PropertyTokenizer;
 import org.apache.ibatis.scripting.xmltags.ForEachSqlNode;

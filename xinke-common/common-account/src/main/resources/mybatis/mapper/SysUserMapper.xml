@@ -3,16 +3,24 @@
 <mapper namespace="com.xinke.management.dao.SysUserMapper" >
   <resultMap id="BaseResultMap" type="com.xinke.management.entity.beans.SysUser" >
     <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="phone" property="phone" jdbcType="CHAR" />
+    <result column="telephone" property="telephone" jdbcType="VARCHAR" />
+    <result column="address" property="address" jdbcType="VARCHAR" />
+    <result column="enabled" property="enabled" jdbcType="BIT" />
     <result column="username" property="username" jdbcType="VARCHAR" />
     <result column="password" property="password" jdbcType="VARCHAR" />
-    <result column="nickname" property="nickname" jdbcType="VARCHAR" />
-    <result column="role_id" property="roleId" jdbcType="INTEGER" />
+    <result column="userface" property="userface" jdbcType="VARCHAR" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
     <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="create_no" property="createNo" jdbcType="INTEGER" />
     <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
-    <result column="delete_status" property="deleteStatus" jdbcType="VARCHAR" />
+    <result column="update_no" property="updateNo" jdbcType="INTEGER" />
+    <result column="del_flag" property="delFlag" jdbcType="TINYINT" />
   </resultMap>
   <sql id="Base_Column_List" >
-    id, username, password, nickname, role_id, create_time, update_time, delete_status
+    id, name, phone, telephone, address, enabled, username, password, userface, remark, 
+    create_time, create_no, update_time, update_no, del_flag
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="org.mybatis.generator.criteria.Criteria" >
     select
@@ -42,12 +50,18 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.xinke.management.entity.beans.SysUser" >
-    insert into sys_user (id, username, password, 
-      nickname, role_id, create_time, 
-      update_time, delete_status)
-    values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
-      #{nickname,jdbcType=VARCHAR}, #{roleId,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, 
-      #{updateTime,jdbcType=TIMESTAMP}, #{deleteStatus,jdbcType=VARCHAR})
+    insert into sys_user (id, name, phone, 
+      telephone, address, enabled, 
+      username, password, userface, 
+      remark, create_time, create_no, 
+      update_time, update_no, del_flag
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{phone,jdbcType=CHAR}, 
+      #{telephone,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, #{enabled,jdbcType=BIT}, 
+      #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{userface,jdbcType=VARCHAR}, 
+      #{remark,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{createNo,jdbcType=INTEGER}, 
+      #{updateTime,jdbcType=TIMESTAMP}, #{updateNo,jdbcType=INTEGER}, #{delFlag,jdbcType=TINYINT}
+      )
   </insert>
   <insert id="insertSelective" parameterType="com.xinke.management.entity.beans.SysUser" >
     insert into sys_user
@@ -55,31 +69,67 @@
       <if test="id != null" >
         id,
       </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="phone != null" >
+        phone,
+      </if>
+      <if test="telephone != null" >
+        telephone,
+      </if>
+      <if test="address != null" >
+        address,
+      </if>
+      <if test="enabled != null" >
+        enabled,
+      </if>
       <if test="username != null" >
         username,
       </if>
       <if test="password != null" >
         password,
       </if>
-      <if test="nickname != null" >
-        nickname,
+      <if test="userface != null" >
+        userface,
       </if>
-      <if test="roleId != null" >
-        role_id,
+      <if test="remark != null" >
+        remark,
       </if>
       <if test="createTime != null" >
         create_time,
       </if>
+      <if test="createNo != null" >
+        create_no,
+      </if>
       <if test="updateTime != null" >
         update_time,
       </if>
-      <if test="deleteStatus != null" >
-        delete_status,
+      <if test="updateNo != null" >
+        update_no,
+      </if>
+      <if test="delFlag != null" >
+        del_flag,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
       <if test="id != null" >
         #{id,jdbcType=INTEGER},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null" >
+        #{phone,jdbcType=CHAR},
+      </if>
+      <if test="telephone != null" >
+        #{telephone,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null" >
+        #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="enabled != null" >
+        #{enabled,jdbcType=BIT},
       </if>
       <if test="username != null" >
         #{username,jdbcType=VARCHAR},
@@ -87,20 +137,26 @@
       <if test="password != null" >
         #{password,jdbcType=VARCHAR},
       </if>
-      <if test="nickname != null" >
-        #{nickname,jdbcType=VARCHAR},
+      <if test="userface != null" >
+        #{userface,jdbcType=VARCHAR},
       </if>
-      <if test="roleId != null" >
-        #{roleId,jdbcType=INTEGER},
+      <if test="remark != null" >
+        #{remark,jdbcType=VARCHAR},
       </if>
       <if test="createTime != null" >
         #{createTime,jdbcType=TIMESTAMP},
       </if>
+      <if test="createNo != null" >
+        #{createNo,jdbcType=INTEGER},
+      </if>
       <if test="updateTime != null" >
         #{updateTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="deleteStatus != null" >
-        #{deleteStatus,jdbcType=VARCHAR},
+      <if test="updateNo != null" >
+        #{updateNo,jdbcType=INTEGER},
+      </if>
+      <if test="delFlag != null" >
+        #{delFlag,jdbcType=TINYINT},
       </if>
     </trim>
   </insert>
@@ -116,26 +172,47 @@
       <if test="record.id != null" >
         id = #{record.id,jdbcType=INTEGER},
       </if>
+      <if test="record.name != null" >
+        name = #{record.name,jdbcType=VARCHAR},
+      </if>
+      <if test="record.phone != null" >
+        phone = #{record.phone,jdbcType=CHAR},
+      </if>
+      <if test="record.telephone != null" >
+        telephone = #{record.telephone,jdbcType=VARCHAR},
+      </if>
+      <if test="record.address != null" >
+        address = #{record.address,jdbcType=VARCHAR},
+      </if>
+      <if test="record.enabled != null" >
+        enabled = #{record.enabled,jdbcType=BIT},
+      </if>
       <if test="record.username != null" >
         username = #{record.username,jdbcType=VARCHAR},
       </if>
       <if test="record.password != null" >
         password = #{record.password,jdbcType=VARCHAR},
       </if>
-      <if test="record.nickname != null" >
-        nickname = #{record.nickname,jdbcType=VARCHAR},
+      <if test="record.userface != null" >
+        userface = #{record.userface,jdbcType=VARCHAR},
       </if>
-      <if test="record.roleId != null" >
-        role_id = #{record.roleId,jdbcType=INTEGER},
+      <if test="record.remark != null" >
+        remark = #{record.remark,jdbcType=VARCHAR},
       </if>
       <if test="record.createTime != null" >
         create_time = #{record.createTime,jdbcType=TIMESTAMP},
       </if>
+      <if test="record.createNo != null" >
+        create_no = #{record.createNo,jdbcType=INTEGER},
+      </if>
       <if test="record.updateTime != null" >
         update_time = #{record.updateTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="record.deleteStatus != null" >
-        delete_status = #{record.deleteStatus,jdbcType=VARCHAR},
+      <if test="record.updateNo != null" >
+        update_no = #{record.updateNo,jdbcType=INTEGER},
+      </if>
+      <if test="record.delFlag != null" >
+        del_flag = #{record.delFlag,jdbcType=TINYINT},
       </if>
     </set>
     <if test="_parameter != null" >
@@ -145,13 +222,20 @@
   <update id="updateByExample" parameterType="map" >
     update sys_user
     set id = #{record.id,jdbcType=INTEGER},
+      name = #{record.name,jdbcType=VARCHAR},
+      phone = #{record.phone,jdbcType=CHAR},
+      telephone = #{record.telephone,jdbcType=VARCHAR},
+      address = #{record.address,jdbcType=VARCHAR},
+      enabled = #{record.enabled,jdbcType=BIT},
       username = #{record.username,jdbcType=VARCHAR},
       password = #{record.password,jdbcType=VARCHAR},
-      nickname = #{record.nickname,jdbcType=VARCHAR},
-      role_id = #{record.roleId,jdbcType=INTEGER},
+      userface = #{record.userface,jdbcType=VARCHAR},
+      remark = #{record.remark,jdbcType=VARCHAR},
       create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      create_no = #{record.createNo,jdbcType=INTEGER},
       update_time = #{record.updateTime,jdbcType=TIMESTAMP},
-      delete_status = #{record.deleteStatus,jdbcType=VARCHAR}
+      update_no = #{record.updateNo,jdbcType=INTEGER},
+      del_flag = #{record.delFlag,jdbcType=TINYINT}
     <if test="_parameter != null" >
       <include refid="common.Update_By_Example_Where_Clause" />
     </if>
@@ -159,39 +243,67 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.xinke.management.entity.beans.SysUser" >
     update sys_user
     <set >
+      <if test="name != null" >
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null" >
+        phone = #{phone,jdbcType=CHAR},
+      </if>
+      <if test="telephone != null" >
+        telephone = #{telephone,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null" >
+        address = #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="enabled != null" >
+        enabled = #{enabled,jdbcType=BIT},
+      </if>
       <if test="username != null" >
         username = #{username,jdbcType=VARCHAR},
       </if>
       <if test="password != null" >
         password = #{password,jdbcType=VARCHAR},
       </if>
-      <if test="nickname != null" >
-        nickname = #{nickname,jdbcType=VARCHAR},
+      <if test="userface != null" >
+        userface = #{userface,jdbcType=VARCHAR},
       </if>
-      <if test="roleId != null" >
-        role_id = #{roleId,jdbcType=INTEGER},
+      <if test="remark != null" >
+        remark = #{remark,jdbcType=VARCHAR},
       </if>
       <if test="createTime != null" >
         create_time = #{createTime,jdbcType=TIMESTAMP},
       </if>
+      <if test="createNo != null" >
+        create_no = #{createNo,jdbcType=INTEGER},
+      </if>
       <if test="updateTime != null" >
         update_time = #{updateTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="deleteStatus != null" >
-        delete_status = #{deleteStatus,jdbcType=VARCHAR},
+      <if test="updateNo != null" >
+        update_no = #{updateNo,jdbcType=INTEGER},
+      </if>
+      <if test="delFlag != null" >
+        del_flag = #{delFlag,jdbcType=TINYINT},
       </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.xinke.management.entity.beans.SysUser" >
     update sys_user
-    set username = #{username,jdbcType=VARCHAR},
+    set name = #{name,jdbcType=VARCHAR},
+      phone = #{phone,jdbcType=CHAR},
+      telephone = #{telephone,jdbcType=VARCHAR},
+      address = #{address,jdbcType=VARCHAR},
+      enabled = #{enabled,jdbcType=BIT},
+      username = #{username,jdbcType=VARCHAR},
       password = #{password,jdbcType=VARCHAR},
-      nickname = #{nickname,jdbcType=VARCHAR},
-      role_id = #{roleId,jdbcType=INTEGER},
+      userface = #{userface,jdbcType=VARCHAR},
+      remark = #{remark,jdbcType=VARCHAR},
       create_time = #{createTime,jdbcType=TIMESTAMP},
+      create_no = #{createNo,jdbcType=INTEGER},
       update_time = #{updateTime,jdbcType=TIMESTAMP},
-      delete_status = #{deleteStatus,jdbcType=VARCHAR}
+      update_no = #{updateNo,jdbcType=INTEGER},
+      del_flag = #{delFlag,jdbcType=TINYINT}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

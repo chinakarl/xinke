@@ -1,7 +1,5 @@
 package com.xinke.common.base;
 
-import com.ai.market.common.mybatis.Criteria;
-import com.ai.market.common.page.Page;
 import com.xinke.common.mybatis.Criteria;
 import com.xinke.common.page.Page;
 import org.apache.commons.lang3.StringUtils;

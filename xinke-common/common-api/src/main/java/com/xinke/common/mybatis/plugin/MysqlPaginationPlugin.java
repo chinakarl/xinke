@@ -1,6 +1,6 @@
 package com.xinke.common.mybatis.plugin;
 
-import com.ai.market.common.page.Page;
+import com.xinke.common.page.Page;
 import org.apache.ibatis.executor.Executor;
 import org.apache.ibatis.mapping.MappedStatement;
 import org.apache.ibatis.plugin.Intercepts;

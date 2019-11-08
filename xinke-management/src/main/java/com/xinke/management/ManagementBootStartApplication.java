@@ -9,7 +9,7 @@ import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan
+@ComponentScan({"com.xinke.management"})
 @MapperScan("com.xinke.management.dao")
 @EnableCaching
 public class ManagementBootStartApplication

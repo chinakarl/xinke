@@ -5,6 +5,7 @@ import com.xinke.common.base.Response;
 import com.xinke.management.config.CorsControllerFilter;
 import com.xinke.management.entity.beans.SysUser;
 import com.xinke.management.service.impl.MyUserDetailService;
+import com.xinke.management.utils.UserUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -115,10 +116,11 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
                     public void onAuthenticationSuccess(HttpServletRequest req,
                                                         HttpServletResponse resp,
                                                         Authentication auth) throws IOException {
-                        SysUser sysUser = (SysUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+                        SysUser sysUser = UserUtil.getCurrentUser();
                         Response respBean = new Response(Response.SUCCESS_CODE,Response.SUCCESS_MSG);
                         respBean.setData(sysUser);
                         ObjectMapper om = new ObjectMapper();
+                        resp.setCharacterEncoding("utf-8");
                         PrintWriter out = resp.getWriter();
                         out.write(om.writeValueAsString(respBean));
                         out.flush();

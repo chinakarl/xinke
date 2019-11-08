@@ -12,9 +12,15 @@
     <result column="password" property="password" jdbcType="VARCHAR" />
     <result column="userface" property="userface" jdbcType="VARCHAR" />
     <result column="remark" property="remark" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="create_no" property="createNo" jdbcType="INTEGER" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="update_no" property="updateNo" jdbcType="INTEGER" />
+    <result column="del_flag" property="delFlag" jdbcType="TINYINT" />
   </resultMap>
   <sql id="Base_Column_List" >
-    id, name, phone, telephone, address, enabled, username, password, userface, remark
+    id, name, phone, telephone, address, enabled, username, password, userface, remark,
+    create_time, create_no, update_time, update_no, del_flag
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="org.mybatis.generator.criteria.Criteria" >
     select
@@ -22,39 +28,43 @@
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from hr
+    from sys_user
     <if test="_parameter != null" >
       <include refid="common.Example_Where_Clause" />
     </if>
   </select>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
-    select 
+    select
     <include refid="Base_Column_List" />
-    from hr
+    from sys_user
     where id = #{id,jdbcType=INTEGER}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
-    delete from hr
+    delete from sys_user
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <delete id="deleteByExample" parameterType="org.mybatis.generator.criteria.Criteria" >
-    delete from hr
+    delete from sys_user
     <if test="_parameter != null" >
       <include refid="common.Example_Where_Clause" />
     </if>
   </delete>
   <insert id="insert" parameterType="com.xinke.management.entity.beans.SysUser" >
-    insert into hr (id, name, phone, 
-      telephone, address, enabled, 
-      username, password, userface, 
-      remark)
-    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{phone,jdbcType=CHAR}, 
-      #{telephone,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, #{enabled,jdbcType=BIT}, 
-      #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{userface,jdbcType=VARCHAR}, 
-      #{remark,jdbcType=VARCHAR})
+    insert into sys_user (id, name, phone,
+      telephone, address, enabled,
+      username, password, userface,
+      remark, create_time, create_no,
+      update_time, update_no, del_flag
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{phone,jdbcType=CHAR},
+      #{telephone,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, #{enabled,jdbcType=BIT},
+      #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{userface,jdbcType=VARCHAR},
+      #{remark,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{createNo,jdbcType=INTEGER},
+      #{updateTime,jdbcType=TIMESTAMP}, #{updateNo,jdbcType=INTEGER}, #{delFlag,jdbcType=TINYINT}
+      )
   </insert>
   <insert id="insertSelective" parameterType="com.xinke.management.entity.beans.SysUser" >
-    insert into hr
+    insert into sys_user
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
         id,
@@ -85,6 +95,21 @@
       </if>
       <if test="remark != null" >
         remark,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="createNo != null" >
+        create_no,
+      </if>
+      <if test="updateTime != null" >
+        update_time,
+      </if>
+      <if test="updateNo != null" >
+        update_no,
+      </if>
+      <if test="delFlag != null" >
+        del_flag,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
@@ -118,16 +143,31 @@
       <if test="remark != null" >
         #{remark,jdbcType=VARCHAR},
       </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createNo != null" >
+        #{createNo,jdbcType=INTEGER},
+      </if>
+      <if test="updateTime != null" >
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateNo != null" >
+        #{updateNo,jdbcType=INTEGER},
+      </if>
+      <if test="delFlag != null" >
+        #{delFlag,jdbcType=TINYINT},
+      </if>
     </trim>
   </insert>
   <select id="countByExample" parameterType="org.mybatis.generator.criteria.Criteria" resultType="java.lang.Integer" >
-    select count(*) from hr
+    select count(*) from sys_user
     <if test="_parameter != null" >
       <include refid="common.Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map" >
-    update hr
+    update sys_user
     <set >
       <if test="record.id != null" >
         id = #{record.id,jdbcType=INTEGER},
@@ -159,29 +199,49 @@
       <if test="record.remark != null" >
         remark = #{record.remark,jdbcType=VARCHAR},
       </if>
+      <if test="record.createTime != null" >
+        create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.createNo != null" >
+        create_no = #{record.createNo,jdbcType=INTEGER},
+      </if>
+      <if test="record.updateTime != null" >
+        update_time = #{record.updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.updateNo != null" >
+        update_no = #{record.updateNo,jdbcType=INTEGER},
+      </if>
+      <if test="record.delFlag != null" >
+        del_flag = #{record.delFlag,jdbcType=TINYINT},
+      </if>
     </set>
     <if test="_parameter != null" >
       <include refid="common.Update_By_Example_Where_Clause" />
     </if>
   </update>
   <update id="updateByExample" parameterType="map" >
-    update hr
+    update sys_user
     set id = #{record.id,jdbcType=INTEGER},
-      name = #{record.name,jdbcType=VARCHAR},
-      phone = #{record.phone,jdbcType=CHAR},
-      telephone = #{record.telephone,jdbcType=VARCHAR},
-      address = #{record.address,jdbcType=VARCHAR},
-      enabled = #{record.enabled,jdbcType=BIT},
-      username = #{record.username,jdbcType=VARCHAR},
-      password = #{record.password,jdbcType=VARCHAR},
-      userface = #{record.userface,jdbcType=VARCHAR},
-      remark = #{record.remark,jdbcType=VARCHAR}
+    name = #{record.name,jdbcType=VARCHAR},
+    phone = #{record.phone,jdbcType=CHAR},
+    telephone = #{record.telephone,jdbcType=VARCHAR},
+    address = #{record.address,jdbcType=VARCHAR},
+    enabled = #{record.enabled,jdbcType=BIT},
+    username = #{record.username,jdbcType=VARCHAR},
+    password = #{record.password,jdbcType=VARCHAR},
+    userface = #{record.userface,jdbcType=VARCHAR},
+    remark = #{record.remark,jdbcType=VARCHAR},
+    create_time = #{record.createTime,jdbcType=TIMESTAMP},
+    create_no = #{record.createNo,jdbcType=INTEGER},
+    update_time = #{record.updateTime,jdbcType=TIMESTAMP},
+    update_no = #{record.updateNo,jdbcType=INTEGER},
+    del_flag = #{record.delFlag,jdbcType=TINYINT}
     <if test="_parameter != null" >
       <include refid="common.Update_By_Example_Where_Clause" />
     </if>
   </update>
   <update id="updateByPrimaryKeySelective" parameterType="com.xinke.management.entity.beans.SysUser" >
-    update hr
+    update sys_user
     <set >
       <if test="name != null" >
         name = #{name,jdbcType=VARCHAR},
@@ -210,11 +270,26 @@
       <if test="remark != null" >
         remark = #{remark,jdbcType=VARCHAR},
       </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createNo != null" >
+        create_no = #{createNo,jdbcType=INTEGER},
+      </if>
+      <if test="updateTime != null" >
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateNo != null" >
+        update_no = #{updateNo,jdbcType=INTEGER},
+      </if>
+      <if test="delFlag != null" >
+        del_flag = #{delFlag,jdbcType=TINYINT},
+      </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.xinke.management.entity.beans.SysUser" >
-    update hr
+    update sys_user
     set name = #{name,jdbcType=VARCHAR},
       phone = #{phone,jdbcType=CHAR},
       telephone = #{telephone,jdbcType=VARCHAR},
@@ -223,7 +298,12 @@
       username = #{username,jdbcType=VARCHAR},
       password = #{password,jdbcType=VARCHAR},
       userface = #{userface,jdbcType=VARCHAR},
-      remark = #{remark,jdbcType=VARCHAR}
+      remark = #{remark,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      create_no = #{createNo,jdbcType=INTEGER},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      update_no = #{updateNo,jdbcType=INTEGER},
+      del_flag = #{delFlag,jdbcType=TINYINT}
     where id = #{id,jdbcType=INTEGER}
   </update>
 

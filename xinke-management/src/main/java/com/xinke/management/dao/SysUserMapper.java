@@ -1,8 +1,8 @@
 package com.xinke.management.dao;
 
+import com.xinke.common.mybatis.Criteria;
 import com.xinke.management.entity.beans.SysUser;
 import org.apache.ibatis.annotations.Param;
-import org.mybatis.generator.criteria.Criteria;
 
 import java.util.List;
 

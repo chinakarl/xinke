@@ -7,7 +7,7 @@
  */
 package com.xinke.common.page;
 
-import com.ai.market.common.base.BaseEntity;
+import com.xinke.common.base.BaseEntity;
 
 import java.io.Serializable;
 
